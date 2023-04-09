@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import manPicture from '../../assets/P3OLGJ1 copy 1.png';
 import { Link, useLoaderData } from 'react-router-dom';
 import Catagory from '../Catagory/Catagory';
+import JobCart from '../JobCart/JobCart';
 
 const Home = () => {
     const jobs = useLoaderData()
@@ -48,13 +49,20 @@ const Home = () => {
                 </div>
             </section>
             <section>
-                <div>
+                <div className='w-[80%] mx-auto text-center my-16'>
+                    <h1 className='text-4xl font-bold my-4'>Featured Jobs</h1>
+                    <p>
+                        Explore thousands of job opportunities with all the information you need. Its your future
+                    </p>
+
+                </div>
+                <div className=' w-[80%] mx-auto grid md:grid-cols-2 gap-11'>
                     {
-                        displayAll ? jobs.map(job => <p>{job.job_title}</p>) : jobs.slice(0,4).map(job => <p>{job.job_title}</p>)
+                        displayAll ? jobs.map(job => <JobCart key={job.id} job={job}></JobCart>) : jobs.slice(0,4).map(job => <JobCart key={job.id} job={job}></JobCart>)
 
                     }
-                    <button className='btn' onClick={handelSeeAllJobs}>view All</button>
                 </div>
+                <button className='btn btn-primary block mx-auto my-7' onClick={handelSeeAllJobs}>{displayAll?"See Less":'See All'}</button>
             </section>
         </>
     );

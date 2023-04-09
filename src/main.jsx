@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import "./index.css";
 import Home from './components/Home/Home';
+import JobDetails from './components/JobDetails/JobDetails';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -17,7 +18,11 @@ const router = createBrowserRouter([
         path:"/",
         element:<Home></Home>,
         loader: () => fetch('Jobs.json')
-      }
+      },
+      {
+        path:"job/:id",
+        element:<JobDetails></JobDetails>,
+      },
     ]
   },
 ]);
