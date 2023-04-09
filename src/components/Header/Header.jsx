@@ -8,8 +8,8 @@ const Header = () => {
         <div className='my-10'>
             <div className="navbar md:w-[80%] mx-auto ">
                 <div className="navbar-start flex-grow">
-                    <h2 className="normal-case flex text-4xl font-bold text-purple-600">
-                        Hero Jobs bd</h2>
+                   <Link to={"/"}> <h2 className="normal-case flex text-4xl font-bold text-purple-600">
+                        Hero Jobs bd</h2></Link>
                 </div>
                 {/* <div className="navbar-center lg:flex">
                     <ul className="menu menu-horizontal px-1 font-bold text-xl">

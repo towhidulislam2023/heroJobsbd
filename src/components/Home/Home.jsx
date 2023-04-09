@@ -6,7 +6,7 @@ import JobCart from '../JobCart/JobCart';
 
 const Home = () => {
     const Loadedjobs = useLoaderData()
-    const [jobs, setjobs] = useState(Loadedjobs)
+    const [jobs, setjobs] = useState(Loadedjobs||[])
     const [catagorys, srtCatagory] = useState([])
     const [displayAll, setDisplayAll] = useState(false)
     useEffect(() => {
@@ -56,7 +56,7 @@ const Home = () => {
                 </div>
                 <div className=' w-[80%] mx-auto grid md:grid-cols-2 gap-11'>
                     {
-                        displayAll ? jobs.map(job => <JobCart key={job.id} job={job}></JobCart>) : jobs.slice(0,4).map(job => <JobCart key={job.id} job={job}></JobCart>)
+                        displayAll ? jobs ? jobs.map(job => <JobCart key={job.id} job={job}></JobCart>) : [] : jobs ? jobs.slice(0,4).map(job => <JobCart key={job.id} job={job}></JobCart>):[]
 
                     }
                 </div>
