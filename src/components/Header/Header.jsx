@@ -29,8 +29,7 @@ const Header = () => {
 
                         }
                     </span>
-                    <ul onClick={() => setOpenNav(!openNav)} className={`md:flex gap-10 px-1 font-bold md:static absolute  duration-300 transition-all ${openNav ? "top-32 bg-gray-200  mr-20  " : "-top-48 "}`}>
-                        <li className='my-3 md:my-0'><NavLink to={"/"} className={({ isActive }) => isActive ? "text-purple-500  underline" : ""}> Home</NavLink></li>
+                    <ul onClick={() => setOpenNav(!openNav)} className={`md:flex gap-10 px-1 font-bold md:static absolute  duration-300 transition-all ${openNav ? "top-32 md:bg-white bg-gray-200 md:mr-0  sm:mr-20  " : "-top-48 "}`}>
                         <li className='my-3 md:my-0'><NavLink to={"/statistics"} className={({ isActive }) => isActive ? "text-purple-500 underline" : ""}> Statistics</NavLink></li>
                         <li className='my-3 md:my-0'><NavLink to={"/appliedJobs"} className={({ isActive }) => isActive ? "text-purple-500 underline" : ""}> Applied Jobs</NavLink></li>
                         <li className='my-3 md:my-0'><NavLink to={"/blog"} className={({ isActive }) => isActive ? "text-purple-500  underline" : ""}> Blog</NavLink></li>

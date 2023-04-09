@@ -5,8 +5,8 @@ import Catagory from '../Catagory/Catagory';
 import JobCart from '../JobCart/JobCart';
 
 const Home = () => {
-    const jobs = useLoaderData()
-    console.log(jobs.slice(0, 4));
+    const Loadedjobs = useLoaderData()
+    const [jobs, setjobs] = useState(Loadedjobs)
     const [catagorys, srtCatagory] = useState([])
     const [displayAll, setDisplayAll] = useState(false)
     useEffect(() => {
@@ -39,9 +39,7 @@ const Home = () => {
                     <p>
                         Explore thousands of job opportunities with all the information you need. Its your future
                     </p>
-
                 </div>
-
                 <div className='grid md:grid-cols-4 w-[80%] mx-auto gap-6'>
                     {
                         catagorys.map(catagory => <Catagory key={catagory.id} catagory={catagory}></Catagory>)
@@ -62,7 +60,7 @@ const Home = () => {
 
                     }
                 </div>
-                <button className='btn btn-primary block mx-auto my-7' onClick={handelSeeAllJobs}>{displayAll?"See Less":'See All'}</button>
+                <button className='btn btn-primary block mx-auto my-7' onClick={handelSeeAllJobs}>{displayAll ? "See Less" : 'See All'}</button>
             </section>
         </>
     );
