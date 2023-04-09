@@ -7,10 +7,17 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import "./index.css";
+import Home from './components/Home/Home';
 const router = createBrowserRouter([
   {
     path: "/",
     element:<App></App>,
+    children:[
+      {
+        path:"/",
+        element:<Home></Home>
+      }
+    ]
   },
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(
