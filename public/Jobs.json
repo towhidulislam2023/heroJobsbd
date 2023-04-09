@@ -1,0 +1,110 @@
+[
+    {
+      "id": 1,
+      "company_logo": "https://images.unsplash.com/photo-1553895501-af9e282e7fc1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "job_title": "Software Developer",
+      "company_name": "Google LLC ",
+      "remote_or_onsite": "Remote",
+      "location": "Any Location",
+      "fulltime_or_parttime": "Full-time",
+      "salary": "$80,000 - $100,000",
+      "job_description": "We are seeking a highly motivated and talented software engineer to join our team. The successful candidate will work closely with our development team to design, develop, and maintain software applications for our clients.",
+      "job_responsibility": "Software engineer responsible for developing, maintaining, and troubleshooting software applications using Java, Python, or other programming languages.",
+      "educational_requirements": "Bachelor's degree in Computer Science or related field",
+      "experiences": "2+ years of software development experience",
+      "contact_information": {
+        "phone": "+880181818182",
+        "email": "jobs@google.com"
+      }
+    },
+    {
+      "id": 2,
+      "company_logo": "https://images.unsplash.com/photo-1621768216002-5ac171876625?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80",
+      "job_title": "Account Manager",
+      "company_name": "Apple Inc.",
+      "remote_or_onsite": "Onsite",
+      "location": "San Francisco, CA",
+      "fulltime_or_parttime": "Full-time",
+      "salary": "$100,000 - $120,000",
+      "job_description": "We are looking for an experienced Account Manager to join our team. The successful candidate will be responsible for building and maintaining relationships with our clients, ensuring customer satisfaction, and driving sales growth.",
+      "job_responsibility": "Account Manager responsible for building and maintaining strong relationships with clients, driving sales growth, and ensuring customer satisfaction.",
+      "educational_requirements": "Bachelor's degree in Business or related field",
+      "experiences": "5+ years of account management experience",
+      "contact_information": {
+        "phone": "+880989443875",
+        "email": "jobs@apple.com"
+      }
+    },
+    {
+      "id": 3,
+      "company_logo": "https://images.unsplash.com/photo-1597878865099-a30447234956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "job_title": "Marketing Coordinator",
+      "company_name": " Tesla, Inc.",
+      "remote_or_onsite": "Onsite",
+      "location": "New York, NY",
+      "fulltime_or_parttime": "Full-time",
+      "salary": "$60,000 - $80,000",
+      "job_description": "We are seeking a talented and enthusiastic Marketing Coordinator to join our team. The successful candidate will be responsible for assisting in the execution of marketing campaigns, managing our social media presence, and coordinating marketing events to increase brand awareness and drive lead generation.",
+      "job_responsibility": "Marketing Coordinator responsible for executing marketing campaigns, managing social media presence, and coordinating marketing events to increase brand awareness and drive lead generation.",
+      "educational_requirements": "Bachelor's degree in Marketing or related field",
+      "experiences": "2+ years of marketing experience",
+      "contact_information": {
+        "phone": "(123) 456-7890",
+        "email": "jobs@elontesla.com"
+      }
+    },
+    {
+      "id": 4,
+      "company_logo": "https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "job_title": "UX Designer",
+      "company_name": "Amazon.com, Inc.",
+      "remote_or_onsite": "Remote",
+      "location": "Any Location",
+      "fulltime_or_parttime": "Full-time",
+      "salary": "$90,000 - $120,000",
+      "job_description": "We are seeking a talented and experienced UX Designer to join our team. The successful candidate will be responsible for designing and delivering intuitive and user-centered experiences across our digital products and services.",
+      "job_responsibility": "UX Designer responsible for designing intuitive and user-centered digital experiences, conducting user research, creating wireframes and prototypes, and ensuring designs are consistent with brand guidelines and standards.",
+      "educational_requirements": "Bachelor's degree in Graphic Design, UX Design, or related field",
+      "experiences": "3+ years of UX design experience",
+      "contact_information": {
+        "phone": "(123) 456-7890",
+        "email": "jobs@emajon.com"
+      }
+    },
+    {
+      "id": 5,
+      "company_logo": "https://images.samsung.com/is/image/samsung/assets/us/about-us/brand/logo/pc/720_600_1.png?$720_N_PNG$",
+      "job_title": "Data Analyst",
+      "company_name": "Samsung Electronics Co Ltd",
+      "remote_or_onsite": "Onsite",
+      "location": "Chicago, IL",
+      "fulltime_or_parttime": "Full-time",
+      "salary": "$70,000 - $90,000",
+      "job_description": "We are looking for a talented and motivated Data Analyst to join our team. The successful candidate will be responsible for analyzing complex data sets, identifying trends and insights, and presenting findings to stakeholders to inform business decisions.",
+      "job_responsibility": "Data Analyst responsible for analyzing large data sets, identifying trends and insights, creating data models and reports, and presenting findings to stakeholders to inform business decisions.",
+      "educational_requirements": "Bachelor's degree in Statistics, Mathematics, or related field",
+      "experiences": "2+ years of data analysis experience",
+      "contact_information": {
+        "phone": "(123) 456-7890",
+        "email": "jobs@samsung.com"
+      }
+    },
+    {
+      "id": 6,
+      "company_logo": "https://www.logo.wine/a/logo/Khan_Academy/Khan_Academy-Logo.wine.svg",
+      "job_title": "HR Manager",
+      "company_name": "Khan Academy, Inc.",
+      "remote_or_onsite": "Onsite",
+      "location": "Los Angeles, CA",
+      "fulltime_or_parttime": "Full-time",
+      "salary": "$100,000 - $130,000",
+      "job_description": "We are seeking an experienced and motivated HR Manager to join our team. The successful candidate will be responsible for developing and implementing HR policies and procedures, managing employee relations, and ensuring compliance with all applicable employment laws and regulations.",
+      "job_responsibility": "HR Manager responsible for developing and implementing HR policies, managing employee relations, ensuring compliance with employment laws and regulations, and driving employee engagement and diversity initiatives.",
+      "educational_requirements": "Bachelor's degree in Human Resources or related field",
+      "experiences": "5+ years of HR experience, including 2+ years in a management role",
+      "contact_information": {
+        "phone": "(123) 456-7890",
+        "email": "jobs@khan.com"
+      }
+    }
+]
