@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Assignment 1",
+    "score": 50
+  },
+  {
+    "id": 2,
+    "name": "Assignment 2",
+    "score": 55
+  },
+  {
+    "id": 3,
+    "name": "Assignment 3",
+    "score": 45
+  },
+  {
+    "id": 4,
+    "name": "Assignment 4",
+    "score": 58
+  },
+  {
+    "id": 5,
+    "name": "Assignment 5",
+    "score": 51
+  },
+  {
+    "id": 6,
+    "name": "Assignment 6",
+    "score": 60
+  },
+  {
+    "id": 7,
+    "name": "Assignment 7",
+    "score": 48
+  }
+]

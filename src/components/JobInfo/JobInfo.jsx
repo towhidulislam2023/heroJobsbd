@@ -2,7 +2,7 @@ import React from 'react';
 import { BriefcaseIcon, CurrencyDollarIcon, EnvelopeIcon, MapPinIcon, PhoneIcon } from '@heroicons/react/24/solid';
 
 const JobInfo = ({job}) => {
-    const { company_name, contact_information, educational_requirements, experiences, job_description, job_responsibility, job_title, location, remote_or_onsit, salary } = job
+    const { company_name, contact_information, educational_requirements, experiences, job_description, job_responsibility, job_title, location, remote_or_onsite, salary } = job
     return (
         <>
             <h2 className="text-2xl my-2">Job Details</h2>

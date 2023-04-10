@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Description = ({job}) => {
-    const { company_name, contact_information, educational_requirements, experiences, job_description, job_responsibility, job_title, location, remote_or_onsit, salary } = job
+    const { company_name, contact_information, educational_requirements, experiences, job_description, job_responsibility, job_title, location, remote_or_onsite, salary } = job
     return (
         <>
             <h2> <span className='font-bold'>Job Description:</span> {job_description}

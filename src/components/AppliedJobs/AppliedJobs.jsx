@@ -1,27 +1,39 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { getStoredCart } from '../../utility/fakedb';
+import DisplayApplyJobs from '../DisplayApplyJobs/DisplayApplyJobs';
+import SecandaryHeader from '../SecondaryHeader/SecandaryHeader';
 
 const AppliedJobs = () => {
-    const lodadedjobs=useLoaderData()
-    const [jobs, setJobs] = useState(lodadedjobs)
+    const lodadedjobs = useLoaderData()
+    const [jobs, setJobs] = useState([])
     const storedJob = getStoredCart()
     // console.log(storedJob);
-    const appliedJobscart=[]
-    for (const id in storedJob){
+    const appliedJobscart = []
+    for (const id in storedJob) {
         console.log(id);
-        if (jobs) {
-            const appliedJob = jobs.find(job => job.id === parseInt(id) )
+        if (lodadedjobs) {
+            const appliedJob = lodadedjobs.find(job => job.id === parseInt(id))
             appliedJobscart.push(appliedJob)
             console.log(appliedJob);
         }
 
     }
-    console.log(appliedJobscart);
+    useEffect(() => {
+
+        setJobs(appliedJobscart)
+
+    }, [])
+    console.log(jobs);
     return (
-        <div>
-            This is applied job page
-        </div>
+        <>
+        <SecandaryHeader>Applied Jobs</SecandaryHeader>
+            <div className='md:w-[80%] mx-auto px-10 md:px-36 md:mb-52'>
+                {
+                    jobs.map(job => <DisplayApplyJobs key={job.id} job={job}></DisplayApplyJobs>)
+                }
+            </div>
+        </>
     );
 };
 

@@ -4,21 +4,34 @@ import jobs from '../../../public/Jobs.json';
 import Description from '../Description/Description';
 import JobInfo from '../JobInfo/JobInfo';
 import { addToDb } from '../../utility/fakedb';
+import SecandaryHeader from '../SecondaryHeader/SecandaryHeader';
 
 const JobDetails = () => {
     const { id } = useParams();
-    const job = jobs.find(job => job.id === parseInt(id));
-    const handelAddToCart=(id)=>{
+    const [job, setJob] = useState(null);
+
+    useEffect(() => {
+        const jobData = jobs.find(job => job.id === parseInt(id));
+        setJob(jobData);
+    }, [id]);
+
+    const handelAddToCart = (id) => {
         addToDb(id)
     }
     return (
         <div>
+            <SecandaryHeader>Job Details</SecandaryHeader>
             <div className='md:flex md:w-[80%] mx-auto justify-between gap-10 my-2'>
                 <div className='w-[70%]  px-4 py-7'>
-                    <Description key={id} job={job} ></Description>
+                   {
+                      job &&  <Description key={id} job={job} ></Description>
+                   } 
                 </div>
                 <div className='md:w-[30%] bg-blue-100 rounded-lg py-7 px-6 '>
-                    <JobInfo key={id} job={job}></JobInfo>
+                    {
+                        job && <JobInfo key={id} job={job}></JobInfo>
+                    }
+                 
                 </div>
             </div>
             <div className='md:w-[80%] mx-auto mb-32'>

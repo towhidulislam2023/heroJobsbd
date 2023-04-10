@@ -37,7 +37,7 @@ const Header = () => {
                 </div>
 
                 <div className="navbar-end ">
-                    <Link className="btn bg-purple-900 border-none hover:bg-purple-700">Get started</Link>
+                    <Link className="btn bg-purple-900 border-none hover:bg-purple-700">Star Applying</Link>
                 </div>
             </div>
         </div>

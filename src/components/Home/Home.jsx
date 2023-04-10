@@ -25,8 +25,7 @@ const Home = () => {
                     <div className='md:w-[50%]  md:h-[65vh] p-14'>
                         <h1 className="text-5xl md:w-[50%] font-bold">One Step Closer To Your <br /><span className='text-purple-500'>Dream Job</span> </h1>
                         <p className='my-5 w-fit'>Explore thousands of job opportunities with all the information you need. Its your future. Come find it. Manage all your job application from start to finish.</p>
-                        <Link className="btn bg-purple-900 border-none hover:bg-purple-700">Get started</Link>
-
+                        <Link className="btn bg-purple-900 border-none hover:bg-purple-700">Star Applying</Link>
                     </div>
                     <div className='md:w-[50%] text-right md:h-[65vh]'>
                         <img className='h-[100%] md:ml-32' src={manPicture} alt="" />
