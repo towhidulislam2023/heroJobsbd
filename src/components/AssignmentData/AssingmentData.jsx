@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import SecandaryHeader from '../SecondaryHeader/SecandaryHeader';
-import { useLoaderData } from 'react-router-dom';
 import { ResponsiveContainer, ScatterChart, Scatter, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
 const AssingmentData = () => {
-    const data = useLoaderData()
+    const [data,setData] = useState([])
+    useEffect(()=>{
+        fetch('asssignment.json')
+        .then(res=>res.json())
+            .then(data => setData(data))
+    },[])
     return (
         <>
             <SecandaryHeader> Assingnment Mark</SecandaryHeader>

@@ -5,7 +5,6 @@ const Blog = () => {
     return (
         <div>
             <SecandaryHeader>Blog</SecandaryHeader>
-            <h1>This is blog page</h1>
             <div className="md:w-[70%] w-[95] px-7 md:p-0 mx-auto ">
                 <div className="my-5">
                     <h1 className='text-3xl font-bold '>1. When should you use context API?</h1>
@@ -56,8 +55,8 @@ const Blog = () => {
                     <p className="text-lg">
                         <span className="text-red-700 font-semibold text-lg">Ans:</span>
                         <br />
-                        <span className="bg-green-100 text-black p-1">React</span>:
-                        React is a JavaScript library that helps developers build user interfaces.It creates a virtual representation of the UI, which makes it easier to manage and update the real UI. Mainly it is Component base jabascript library.  It also provides tools for managing state and handling events, making it easier to build complex UIs.React is fast, efficient, and scalable, and it's widely used by developers to build web applications.
+                        <span className="bg-green-100 text-black p-1">useMemo</span>:
+                        useMemo is a React Hook that lets you cache the result of a calculation between re-renders.useMemo Hook can be used to keep expensive, resource intensive functions from needlessly running.It is a Hook, so we can only call it at the top level of your component our own Hooks
                     </p>
                 </div>
             </div>

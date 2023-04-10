@@ -5,7 +5,6 @@ import Catagory from '../Catagory/Catagory';
 import JobCart from '../JobCart/JobCart';
 
 const Home = () => {
-    // const  Loadedjobs = useLoaderData()
     const [jobs, setjobs] = useState([])
     useEffect(()=>{
         fetch('jobs.json')
