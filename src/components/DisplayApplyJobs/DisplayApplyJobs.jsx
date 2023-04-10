@@ -3,8 +3,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const DisplayApplyJobs = ({ job }) => {
-    const { id,company_logo, company_name, contact_information, educational_requirements, experiences, job_description, job_responsibility, job_title, location, remote_or_onsite, fulltime_or_parttime, salary } = job
-    console.log(job);
+    const { id, company_logo, company_name, contact_information, educational_requirements, experiences, job_description, job_responsibility, job_title, location, remote_or_onsite, fulltime_or_parttime, salary } = job
+    // console.log(job);
     return (
         <div className='md:w-[80%] border  my-10 rounded-lg border-black'>
             <div className='md:flex gap-9 items-center py-3 px-3'>

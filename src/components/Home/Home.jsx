@@ -5,12 +5,17 @@ import Catagory from '../Catagory/Catagory';
 import JobCart from '../JobCart/JobCart';
 
 const Home = () => {
-    const Loadedjobs = useLoaderData()
-    const [jobs, setjobs] = useState(Loadedjobs||[])
+    // const  Loadedjobs = useLoaderData()
+    const [jobs, setjobs] = useState([])
+    useEffect(()=>{
+        fetch('jobs.json')
+        .then(res=>res.json())
+            .then(data => setjobs(data))
+    },[])
     const [catagorys, srtCatagory] = useState([])
     const [displayAll, setDisplayAll] = useState(false)
     useEffect(() => {
-        fetch('Catagory.json')
+        fetch('catagory.json')
             .then(res => res.json())
             .then(data => srtCatagory(data.category))
     }, [])
